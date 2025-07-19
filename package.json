@@ -1,32 +1,39 @@
 {
-  "name": "my_website",
-  "version": "0.1.0",
+  "name": "academic-homepage",
+  "version": "1.0.0",
   "private": true,
-  "homepage": "https://abhisheka456.github.io/new_website",
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d out"
+    "format": "prettier --write .",
+    "analyze": "ANALYZE=true next build",
+    "clean": "rm -rf .next/ node_modules/",
+    "type-check": "tsc --noEmit",
+    "prepare": "husky install",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
-    "next": "15.4.2",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "framer-motion": "^10.18.0",
+    "next": "14.1.4",
+    "next-themes": "^0.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-intersection-observer": "^9.16.0"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "15.4.2",
-    "gh-pages": "^6.3.0",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "@types/node": "20.11.19",
+    "@types/react": "18.2.53",
+    "@types/react-dom": "18.2.18",
+    "autoprefixer": "^10.4.16",
+    "eslint": "8.56.0",
+    "eslint-config-next": "14.1.4",
+    "eslint-config-prettier": "^9.1.0",
+    "postcss": "^8.4.33",
+    "prettier": "^3.2.4",
+    "tailwindcss": "^3.4.1",
+    "typescript": "5.3.3"
   }
 }
