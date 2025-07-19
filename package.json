@@ -2,7 +2,7 @@
   "name": "my_website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://abhisheka456.github.io/assistant-processor",
+  "homepage": "https://abhisheka456.github.io/new_website",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
